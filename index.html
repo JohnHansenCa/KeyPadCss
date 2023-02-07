@@ -14,13 +14,24 @@
     <h5><a href="https://github.com/JohnHansenCa/KeyPadCss">Source code found on github </a></h5>
     <p>CSS demo and source code under construction</p>
     <p>The buttons will scale as the window width is changed.</p>
-    <div class="kp-light kp-one">
-    <div id="keyContainer4by5" style="display: grid; grid-template-columns:  1fr 1fr 1fr 1fr;   border:1px solid red;">
+    <div class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:5vw">
+      <button class="kp-key kp-key-style kp-color kp-alpha" onclick="changeButtons('kp-alpha');">alpha</button>
+      <button class="kp-key kp-key-style kp-color kp-round" onclick="changeButtons('kp-round');">round</button>
+      
+      <button class="kp-key kp-key-style kp-color kp-lambda" onclick="changeButtons('kp-lambda');">lambda</button>
+      <button class="kp-key kp-key-style kp-color kp-alpha kp-dark" onclick="changeTheme('kp-dark');">dark</button>
+      <button class="kp-key kp-key-style kp-color kp-alpha" onclick="changeTheme('kp-light');">light</button>
+      <!-- <div class="kp-key kp-key-style kp-color">alpha</div> -->
+   
+    </div>
+    <div style="border:1px solid red; font-size: 5vw">Select key display options above.</div>
+    <div id="keypadcontainer" class="kp-light kp-alpha">
+    <div id="keyContainer4by5" class="kp-grid-container" style=" grid-template-columns:  1fr 1fr 1fr 1fr; font-size: 8vw;">
     
-      <div id="kp-key-delete" class="kp-key kp-key-style kp-color">␡</div>
+      <div id="kp-key-delete" class="kp-key kp-key-style kp-color kp-red">␡</div>
       <div  class="kp-key kp-key-style kp-color kp-orange">𝑓x</div>
       <div  class="kp-key kp-key-style kp-color kp-yellow">▲</div>
-      <div id="kp-key-backspace" class="kp-key kp-key-style kp-color">⌫</div>
+      <button id="kp-key-backspace" class="kp-key kp-key-style kp-color kp-blue">⌫</button>
      
       <div  class="kp-key kp-key-style kp-color">(</div>
       <div  class="kp-key kp-key-style kp-color">)</div>
@@ -44,11 +55,27 @@
 
       <div  class="kp-key kp-key-style kp-color">0</div>
       <div  class="kp-key kp-key-style kp-color">.</div>
-      <div id="kp-key-equal" class="kp-key kp-key-style kp-color">=</div>
-      <div id="kp-key-carriage-return" class="kp-key kp-key-style kp-color">⏎</div>
+      <div id="kp-key-equal" class="kp-key kp-key-style kp-color kp-blue">=</div>
+      <div id="kp-key-carriage-return" class="kp-key kp-key-style kp-color kp-green">⏎</div>
       
 
     </div>
 </div>
+<script>
+  var currentType = 'kp-alpha';
+  function changeButtons(config){
+    let e = document.getElementById("keypadcontainer");
+    e.classList.remove(currentType);
+    e.classList.add(config);
+    currentType = config;
+  }
+  var currentTheme = 'kp-light';
+  function changeTheme(config){
+    let e = document.getElementById("keypadcontainer");
+    e.classList.remove(currentTheme);
+    e.classList.add(config);
+    currentTheme = config;
+  }
+</script>
   </body>
 </html>
