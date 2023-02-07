@@ -10,6 +10,10 @@ to be added
 At this time it is recommended that developers simply 'clone and own' this code.
 ## Thanks to these projects
 -[Github:loup-brun/buttons](https://github.com/loup-brun/buttons)
-> Lots of inspiration from this project. 
+ > Lots of inspiration from this project. 
 -[Github:jonathanstark/FastActive](https://github.com/jonathanstark/FastActive)
-> FastActive allows a stylus on a touch device to properly invoke the CSS :active pseudo-class. In other words, without this tiny Javascript module the click animation of buttons doesn't work when using a stylus.
+ > FastActive allows a stylus on a touch device to properly invoke the CSS :active pseudo-class. In other words, without this tiny Javascript module the click animation of buttons doesn't work when using a stylus.
+
+## License
+
+[MIT](LICENSE)
