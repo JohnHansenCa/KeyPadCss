@@ -2,9 +2,53 @@
 <html>
   <head>
     <title>KeyPad Demo</title>
+    <link rel="stylesheet" href="src/styles/keypad.css">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FastActive allows a stylus on a touch device to properly invoke the
+    CSS :active pseudo-class. -->
+    <script src="src/libs/FastActive.min.js" defer=""></script>
   </head>
   <body>
     <h1>KeyPad Demo</h1>
-    <p>CSS demo and source code to be added shortly</p>
+    <h5><a href="https://github.com/JohnHansenCa/KeyPadCss">Source code found on github </a></h5>
+    <p>CSS demo and source code under construction</p>
+    <p>The buttons will scale as the window width is changed.</p>
+    <div class="kp-light kp-one">
+    <div id="keyContainer4by5" style="display: grid; grid-template-columns:  1fr 1fr 1fr 1fr;   border:1px solid red;">
+    
+      <div id="kp-key-delete" class="kp-key kp-key-style kp-color">␡</div>
+      <div  class="kp-key kp-key-style kp-color kp-orange">𝑓x</div>
+      <div  class="kp-key kp-key-style kp-color kp-yellow">▲</div>
+      <div id="kp-key-backspace" class="kp-key kp-key-style kp-color">⌫</div>
+     
+      <div  class="kp-key kp-key-style kp-color">(</div>
+      <div  class="kp-key kp-key-style kp-color">)</div>
+      <div  class="kp-key kp-key-style kp-color">%</div>
+      <div  class="kp-key kp-key-style kp-color">÷</div>
+
+      <div  class="kp-key kp-key-style kp-color">7</div>
+      <div  class="kp-key kp-key-style kp-color">8</div>
+      <div  class="kp-key kp-key-style kp-color">9</div>
+      <div  class="kp-key kp-key-style kp-color">×</div>
+      
+      <div  class="kp-key kp-key-style kp-color">4</div>
+      <div  class="kp-key kp-key-style kp-color">5</div>
+      <div  class="kp-key kp-key-style kp-color">6</div>
+      <div  class="kp-key kp-key-style kp-color">-</div>
+  
+      <div  class="kp-key kp-key-style kp-color">1</div>
+      <div  class="kp-key kp-key-style kp-color">2</div>
+      <div  class="kp-key kp-key-style kp-color">3</div>
+      <div  class="kp-key kp-key-style kp-color">+</div>
+
+      <div  class="kp-key kp-key-style kp-color">0</div>
+      <div  class="kp-key kp-key-style kp-color">.</div>
+      <div id="kp-key-equal" class="kp-key kp-key-style kp-color">=</div>
+      <div id="kp-key-carriage-return" class="kp-key kp-key-style kp-color">⏎</div>
+      
+
+    </div>
+</div>
   </body>
 </html>

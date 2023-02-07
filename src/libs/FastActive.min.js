@@ -1,0 +1,1 @@
+(function(a,c,d,f){if("ontouchstart"in c||c.a&&a instanceof DocumentTouch){var b=null,e=function(){b&&(b.classList.remove(d),b=null)};a.body.addEventListener("touchstart",function(a){e();f(a)&&(b=a.target,b.classList.add(d))},!1);a.body.addEventListener("touchmove",e,!1)}})(document,window,"active",function(a){return-1<["A","INPUT"].indexOf(a.target.tagName)});
