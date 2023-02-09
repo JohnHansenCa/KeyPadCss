@@ -12,11 +12,13 @@
         .box-text{
             width:40%;
             flex-wrap: wrap; 
+            max-width: 450px
         }
         .box-keypad{
           width:60%;
           display:flex;
           flex-wrap:wrap;
+          max-width: 450px;
         }
         @media only screen and (max-width: 500px){
             .box-keypad,
@@ -25,6 +27,7 @@
             }
         }
         .container{
+          min-width: 290px;
             display: flex;
             flex-wrap: wrap; 
             margin: 0 auto;}
@@ -39,7 +42,7 @@
         <p style="font-weight:bold">The buttons will scale as the window width is changed.</p>
       </div>
     <div class="box-keypad">
-    <div class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:3vw; width:100%">
+    <div class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:largest; width:100%">
       <button class="kp-key kp-key-style kp-color kp-alpha" onclick="changeButtons('kp-alpha');">alpha</button>
       <button class="kp-key kp-key-style kp-color kp-round" onclick="changeButtons('kp-round');">round</button>
       
@@ -51,7 +54,7 @@
     </div>
     <div style="border:1px solid red; font-size: large;">Select key display options above.</div>
     <div id="keypadcontainer" class="kp-light kp-alpha" style="display:flex; width:100%">
-    <div id="keyContainer4by5" class="kp-grid-container" style=" grid-template-columns:  1fr 1fr 1fr 1fr; font-size: 6vw;  width:100%">
+    <div id="keyContainer4by5" class="kp-grid-container" style=" grid-template-columns:  1fr 1fr 1fr 1fr; font-size: 30px;  width:100%">
     
       <div id="kp-key-delete" class="kp-key kp-key-style kp-color kp-red">␡</div>
       <div  class="kp-key kp-key-style kp-color kp-orange">𝑓x</div>
