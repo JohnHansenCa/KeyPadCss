@@ -8,13 +8,38 @@
     <!-- FastActive allows a stylus on a touch device to properly invoke the
     CSS :active pseudo-class. -->
     <script src="src/libs/FastActive.min.js" defer=""></script>
+    <style>
+        .box-text{
+            width:40%;
+            flex-wrap: wrap; 
+        }
+        .box-keypad{
+          width:60%;
+          display:flex;
+          flex-wrap:wrap;
+        }
+        @media only screen and (max-width: 500px){
+            .box-keypad,
+            .box-text{
+                width:100%;
+            }
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap; 
+            margin: 0 auto;}
+    </style>
   </head>
   <body>
     <h1>KeyPad Demo</h1>
-    <h5><a href="https://github.com/JohnHansenCa/KeyPadCss">Source code found on github </a></h5>
-    <p>CSS demo and source code under construction</p>
-    <p>The buttons will scale as the window width is changed.</p>
-    <div class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:5vw">
+    <div class="container">
+      <div class ="box-text">
+        <h5><a href="https://github.com/JohnHansenCa/KeyPadCss">Source code found on github </a></h5>
+        <p>CSS demo and source code under construction</p>
+        <p style="font-weight:bold">The buttons will scale as the window width is changed.</p>
+      </div>
+    <div class="box-keypad">
+    <div class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:3vw; width:100%">
       <button class="kp-key kp-key-style kp-color kp-alpha" onclick="changeButtons('kp-alpha');">alpha</button>
       <button class="kp-key kp-key-style kp-color kp-round" onclick="changeButtons('kp-round');">round</button>
       
@@ -24,9 +49,9 @@
       <!-- <div class="kp-key kp-key-style kp-color">alpha</div> -->
    
     </div>
-    <div style="border:1px solid red; font-size: 5vw">Select key display options above.</div>
-    <div id="keypadcontainer" class="kp-light kp-alpha">
-    <div id="keyContainer4by5" class="kp-grid-container" style=" grid-template-columns:  1fr 1fr 1fr 1fr; font-size: 8vw;">
+    <div style="border:1px solid red; font-size: large;">Select key display options above.</div>
+    <div id="keypadcontainer" class="kp-light kp-alpha" style="display:flex; width:100%">
+    <div id="keyContainer4by5" class="kp-grid-container" style=" grid-template-columns:  1fr 1fr 1fr 1fr; font-size: 6vw;  width:100%">
     
       <div id="kp-key-delete" class="kp-key kp-key-style kp-color kp-red">␡</div>
       <div  class="kp-key kp-key-style kp-color kp-orange">𝑓x</div>
@@ -61,6 +86,8 @@
 
     </div>
 </div>
+    </div>
+    </div>
 <script>
   var currentType = 'kp-alpha';
   function changeButtons(config){
