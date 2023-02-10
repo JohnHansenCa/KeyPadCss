@@ -8,8 +8,6 @@ The goal was to generate a keypad for a larger calculator project that will use 
 to be added
 # Using KeypadCss
 At this time it is recommended that developers simply 'clone and own' this code.
-# Issues
-The font size of the calculator buttons do not scale. A small piece of javascript code will added to fix this problem. Note: In mobile apps the font size can simply be set 'vw' as the calculator width is typically the window width.
 ## Thanks to these projects
 -[Github:loup-brun/buttons](https://github.com/loup-brun/buttons)
  > Lots of inspiration from this project.

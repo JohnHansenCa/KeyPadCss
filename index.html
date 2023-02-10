@@ -27,7 +27,6 @@
             }
         }
         .container{
-          min-width: 290px;
             display: flex;
             flex-wrap: wrap; 
             margin: 0 auto;}
@@ -42,7 +41,7 @@
         <p style="font-weight:bold">The buttons will scale as the window width is changed.</p>
       </div>
     <div class="box-keypad">
-    <div class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:largest; width:100%">
+    <div id="optionsContainer" class="kp-grid-container kp-light" style="grid-template-columns:  1fr 1fr 1fr 1fr 1fr; font-size:largest; width:100%">
       <button class="kp-key kp-key-style kp-color kp-alpha" onclick="changeButtons('kp-alpha');">alpha</button>
       <button class="kp-key kp-key-style kp-color kp-round" onclick="changeButtons('kp-round');">round</button>
       
@@ -106,6 +105,20 @@
     e.classList.add(config);
     currentTheme = config;
   }
+  var referenceSize;
+  var container1 = document.getElementById("optionsContainer");
+  var container2 = document.getElementById("keyContainer4by5");
+  function setFontSize(containerElement, multipler){
+    let size = (referenceSize*multipler).toString();
+    containerElement.style.fontSize = `${size}px`;
+  }
+  function resizeFunc(){
+    referenceSize = document.getElementById("kp-key-delete").clientWidth;
+    setFontSize(container1, .2);
+    setFontSize(container2, .5);
+  }
+  window.addEventListener("resize", resizeFunc);
+  resizeFunc();
 </script>
   </body>
 </html>
