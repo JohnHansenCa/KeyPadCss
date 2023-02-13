@@ -1,9 +1,9 @@
 # KeyPadCss
-Css to generate keypads for calculator applications.
+CSS to generate keypads for calculator applications.
 
-[Demo-Note adjust the window size to see the affect on the calculator buttons.](https://johnhansenca.github.io/KeyPadCss/)
+[Demo-Note: Adjust the window size to see the effect on the calculator buttons.](https://johnhansenca.github.io/KeyPadCss/)
 ## About This Project
-The goal was to generate a keypad for a larger calculator project that will use [Math.js](https://mathjs.org/). KeypadCss takes advantage of HTML5/CSS3 technologies. A futher project(to be released shortly) will wrap KeypadCss with javascript to support cascading dropdown lists, popups and dynamic creations of keys.
+The goal was to generate a keypad for a larger calculator project that will use [Math.js](https://mathjs.org/). KeypadCss takes advantage of HTML5/CSS3 technologies. A further project(to be released shortly) will wrap KeypadCss with javascript to support cascading dropdown lists, popups and dynamic creations of keys.
 # Technical details
 to be added
 # Using KeypadCss

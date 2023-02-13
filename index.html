@@ -112,10 +112,12 @@
     let size = (referenceSize*multipler).toString();
     containerElement.style.fontSize = `${size}px`;
   }
+  // There is probably a better solution
+  // https://css-tricks.com/fitting-text-to-a-container/
   function resizeFunc(){
-    referenceSize = document.getElementById("kp-key-delete").clientWidth;
-    setFontSize(container1, .2);
-    setFontSize(container2, .5);
+    referenceSize = document.getElementById("keyContainer4by5").clientWidth;
+    setFontSize(container1, .045);
+    setFontSize(container2, .1);
   }
   window.addEventListener("resize", resizeFunc);
   resizeFunc();
