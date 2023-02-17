@@ -1,5 +1,5 @@
 
- /* v 0.11 - kp-key: align-self changed to stretch -- */
+ /* v 0.12 - kp-key: align-self changed to stretch -- */
 .kp-key{
    display: flex;
    justify-content: center;
