@@ -1,5 +1,6 @@
 
  /* v 0.13 - kp-key: align-self changed to stretch --- */
+ /* v 0.14 - .kp-list-container .kp-key-style height, kp-select added */
 .kp-key{
    display: flex;
    justify-content: center;
@@ -75,6 +76,7 @@
     padding-left: .5rem;
     padding-right: .5rem;
     margin: 1px;
+    height:fit-content;
  }
  .kp-list-container .kp-key{
   background-image: linear-gradient(to bottom, #dbdbdb, #f3f3f3);
@@ -114,7 +116,8 @@
   background-color: black;
 }
  .kp-list-container{
-  display: grid; 
+  display: flex; 
+  flex-direction: column;
   grid-template-columns: 1fr; 
   border:1px solid green;
   background-color: white;
@@ -167,7 +170,8 @@
    box-shadow: #000000b3 0px 3px 7px, rgba(14, 13, 13, 0.22) 0px 3px 3px;
  } 
 .kp-dark .kp-blue,
-.kp-light .kp-blue {
+.kp-light .kp-blue,
+.kp-select{
     background-image: linear-gradient(to bottom, #5468ad, #4276d6);
     color: white;
     border:1px solid rgba(14, 42, 154, 0.767);
