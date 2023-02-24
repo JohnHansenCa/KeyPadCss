@@ -48,8 +48,8 @@
    font-weight: normal;
    margin: 5px;
    line-height: 40px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
     
     padding-left: 0.3em;
     padding-right: 0.3em;
@@ -57,7 +57,7 @@
    box-shadow: #000000b3 0px 3px 7px, rgba(14, 13, 13, 0.22) 0px 3px 3px;
    /* aspect-ratio:1; */
    /* aspect-ratio:3; */
-   border-radius: 1.21em;
+   border-radius: 0.8em;
  }
  /* .kp-list-container .kp-key-style{
   border-width: 1px; 
@@ -70,9 +70,9 @@
  .kp-list-container .kp-key-style{
     border-width: 1px; 
     border-style: solid; 
-    border-radius: 0.1em;
-    padding-top:0;
-    padding-bottom:0;
+    border-radius: 0.2em;
+    padding-top:.05rem;
+    padding-bottom:.05rem;
     padding-left: .5rem;
     padding-right: .5rem;
     margin: 1px;
@@ -184,15 +184,15 @@
     border:1px solid rgba(154, 14, 14, 0.767);
     box-shadow: rgba(0, 0, 0, 0.701) 0px 3px 7px, rgba(14, 13, 13, 0.22) 0px 3px 3px;
   }
-.kp-dark .kp-orange,
-.kp-light .kp-orange{
+.kp-dark .kp-yellow,
+.kp-light .kp-yellow{
      background-image: linear-gradient(to bottom, #dbd98d, #ffea02);
      color: rgb(83, 1, 1);
      border:1px solid rgba(154, 79, 14, 0.767);
      box-shadow: rgba(0, 0, 0, 0.701) 0px 3px 7px, rgba(14, 13, 13, 0.22) 0px 3px 3px;
    }
-.kp-dark .kp-yellow,
-.kp-light .kp-yellow{
+.kp-dark .kp-orange,
+.kp-light .kp-orange{
      background-image: linear-gradient(to bottom, #f5a30c, #d67b42);
      color: rgb(83, 1, 1);
      border:1px solid rgba(154, 79, 14, 0.767);
