@@ -215,7 +215,8 @@
 }
 .kp-tau .kp-dark .kp-black,
 .kp-tau .kp-light .kp-black,
-.kp-light .kp-tau .kp-black{
+.kp-light .kp-tau .kp-black,
+.kp-dark .kp-tau .kp-black{
   color:white;
   background-image: none;
   background-color: inherit;
