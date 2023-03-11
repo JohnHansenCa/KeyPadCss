@@ -59,6 +59,28 @@
    /* aspect-ratio:3; */
    border-radius: 0.8em;
  }
+ .kp-lambda-thin .kp-key-style,
+.kp-lambda-thin.kp-key-style{
+   background-image: linear-gradient(to bottom, #dbdbdb, #f3f3f3);
+   border:1px solid rgba(141, 141, 141, 0.548);
+   /* border-radius: 10px; */
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: inherit;
+   font-weight: normal;
+   margin: 5px;
+  line-height: 1.5em;
+    padding-top: 0.0em;
+    padding-bottom: 0.0em;
+    
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    vertical-align: bottom;
+   box-shadow: #000000b3 0px 3px 7px, rgba(14, 13, 13, 0.22) 0px 3px 3px;
+   /* aspect-ratio:1; */
+   /* aspect-ratio:3; */
+   border-radius: 0.8em;
+   aspect-ratio: unset;
+ }
  .kp-tau .kp-key-style,
 .kp-tau.kp-key-style{
    background-image: linear-gradient(to bottom, #dbdbdb, #f3f3f3);
