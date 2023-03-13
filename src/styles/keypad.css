@@ -19,10 +19,10 @@
    font-weight: normal;
    margin: 5px;
    /* line-height: 1.42;*/
-    padding-top: 0.3em; 
-    padding-bottom: 0.3em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding-top: 0em; 
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
     /* vertical-align: bottom; */
    aspect-ratio:1; 
  }
